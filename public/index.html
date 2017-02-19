@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="loginbox">
+        <h2>聊天室</h2>
+        用户名：<input type="text" name="nickname" id="nickname" placeholder="请输入用户名"><br/>
+        <div class="sex">性　别：<label>男<input type="radio" name="sex" value="male" checked></label><label>女<input type="radio" name="sex" value="female"></label> </div>
+        头　像：<span id="icon"></span><button type="button" id="icon_btn">选择头像</button>
+        <div id="box">
+            <img src="images/Iconf01.png" alt=""><img src="images/Iconf02.png" alt=""><img src="images/Iconf03.png"
+                                                                                           alt=""><img
+                src="images/Iconf04.png" alt=""><img src="images/Iconf05.png" alt=""><img src="images/Iconf06.png"
+                                                                                          alt=""><img
+                src="images/Iconf07.png" alt=""><img src="images/Iconf08.png" alt=""><img src="images/Iconf09.png"
+                                                                                          alt=""><img
+                src="images/Iconf10.png" alt=""><img src="images/Iconf11.png" alt=""><img src="images/Iconf12.png"
+                                                                                            alt=""><img
+                src="images/Iconf13.png" alt=""><img src="images/Iconf14.png" alt=""><img src="images/Iconf15.png"
+                                                                                            alt="">
+        </div>
+        <div id="btn"><button type="button">登　入</button></div>
+    </div>
+    <div id="chat">
+        <div id="status">
+            <div id="title"></div>
+            <div id="status_connet"></div>
+        </div>
+        <div id="chat_content"></div>
+        <div class="enter">
+            <input type="text" id="enter">
+            <input type="button" value="发送" id="enter_btn">
+        </div>
+    </div>
+</body>
